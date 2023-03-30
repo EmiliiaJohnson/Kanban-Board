@@ -1,5 +1,6 @@
 {
   "name": "kanban",
+  "homepage": "https://emiliiajohnson.github.io/Kanban-Board/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "gh-pages -b main -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
